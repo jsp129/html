@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; ">
+<link rel="stylesheet" href="/script/style.css" type="text/css">
+<style type="text/css">
+#menu {border:1px  border-collapse:collapse;}
+#t1 {border:0.5px solid #819FF7 ; border-collapse:collapse}
+#ad {border:1px solid black; border-collapse:collapse}
+ div{height:40px; width:270px; border:1px solid #819FF7; background:white;}
+ #i2{ font-size:16px; width:200px; padding:10px; border:10px; outline:none; float:left;}
+ #b2{ width:50px; height: 100%; border: 0px; background: #819FF7; outline:none; float:right; color: white;}
+ p { margin:0; color:blue; }
+ div, p { margin-left:10px; }
+ span { color:red; }
+ input:-ms-input-placeholder {color:#a8a8a8;}
+ input::-webkit-input-placeholder {color:#a8a8a8;}
+ input::-moz-placeholder {color:#a8a8a8;}
+ a.no-uline:link    { text-decoration:none }
+a.no-uline:visited { text-decoration:none }
+a.no-uline:hover   { text-decoration:underline  }
+a.no-uline:active  { text-decoration:none }
+ 
+.line{border-bottom:1px solid black;}
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript">
+<!--
+var img=new Array();
+img[0]=new Image(); img[0].src="ji8.jpg";
+img[1]=new Image(); img[1].src="ay4.jpg";
+img[2]=new Image(); img[2].src="ay8.jpg";
+img[3]=new Image(); img[3].src="ay1.jpg";
+img[4]=new Image(); img[4].src="na1.jpg";
+img[5]=new Image(); img[5].src="he1.jpg";
+img[6]=new Image(); img[6].src="y1.jpg";
+img[7]=new Image(); img[7].src="ji1.jpg";
+
+
+var interval=1500;
+var n=0;
+var imgs = new Array("ji8.jpg","ay4.jpg","ay8.jpg","ay1.jpg","na1.jpg","he1.jpg","y1.jpg","ji1.jpg");
+function rotate()
+{
+if(navigator.appName=="Netscape" && document.getElementById)
+{
+document.getElementById("slide").src=imgs[n];
+}
+else document.images.slide.src=imgs[n];
+(n==(imgs.length-1))?n=0:n++;
+setTimeout("rotate()",interval);
+}
+// -->
+</script>
+</head>
+<body>
+<table valign=top align=center border=0 width=1200>
+<tr  align=center height=200>
+		<td valign=top colspan=3 align=center><a href="site.html"><img src=travel.jpg width=400 height=200 align=center border=0></a></td>
+				</tr><br>
+			</table>	
+			<table id=menu width=1000 align=center cellspacing=0>
+<td  align=left onMouseOver="this.style.backgroundColor='white',
+this.style.color='#4375DB'"
+onMouseOut="this.style.backgroundColor='white', this.style.color='#4375DB'"
+onClick="location.href='all.html'"><font face="1ÈÆ¼Ø»çÅÁ R" size=6>ÀüÃ¼±Ûº¸±â&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td  align=left onMouseOver="this.style.backgroundColor='white',
+this.style.color='#4375DB'"
+onMouseOut="this.style.backgroundColor='white', this.style.color='#4375DB'"
+onClick="location.href='travelsite.html'"><font size=6 face="1ÈÆ¼Ø»çÅÁ R" >&nbsp;&nbsp;&nbsp;&nbsp;°¢ ³ª¶óº°&nbsp;&nbsp;&nbsp;</td>
+
+<td align=left onMouseOver="this.style.backgroundColor='white',
+this.style.color='#4375DB'"
+onMouseOut="this.style.backgroundColor='white', this.style.color='#4375DB'"
+onClick="location.href='photo.html'"><font size=6 face="1ÈÆ¼Ø»çÅÁ R" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»çÁø&nbsp;&nbsp;&nbsp;</td>
+
+<td align=right onMouseOver="this.style.backgroundColor='white',
+this.style.color='#4375DB'"
+onMouseOut="this.style.backgroundColor='white', this.style.color='#4375DB'"
+onClick="location.href='map.html'"><font size=6 face="1ÈÆ¼Ø»çÅÁ R" >&nbsp;&nbsp;¼¼°èÁöµµ&nbsp;&nbsp;&nbsp;</td>
+
+<td align=right onMouseOver="this.style.backgroundColor='white',
+this.style.color='#4375DB'"
+onMouseOut="this.style.backgroundColor='white', this.style.color='#4375DB'"
+onClick="location.href='hotel.html'"><font size=6 face="1ÈÆ¼Ø»çÅÁ R" >&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¼÷¹Ú</td>
+</tr>
+</table>
+
+<br><br>
+<table align=center border=0 width=1200 height=1000>
+
+<tr valign=top height=150>
+		<td width=300>
+			<table valign=top border=0 width=300 height=200>
+				<tr height=45>
+					<td colspan=3><font size=6 face="1ÈÆ¼Ø»çÅÁ R" color=#4375DB><b>LOGIN</b></font></td>
+				</tr>
+				<tr height=30>
+					<td width=40><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><b>ID</b></font></td>
+					<td width=155><input type=text size=20></td>
+					<td width=100 rowspan=2>
+						<button style=" padding-top:18px; padding-bottom:18px; padding-left:16px; padding-right:16px; background-color:#9DCFFF; border:none;
+						border-radius:5px;"><font size=4.5 color=white face="1ÈÆ¼Ø»çÅÁ R"><b>·Î±×ÀÎ</b></font></button></td>
+				</tr>
+				<tr height=30>
+					<td><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><b>PW</b></font></td>
+					<td><input type=text size=20></td>
+				</tr>
+				<tr height=40>
+					<td colspan=3 align=center><pre><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="application.html" style="text-decoration:none;">È¸¿ø°¡ÀÔ</a>    |    <a href="find.html" style="text-decoration:none;">IDÃ£±â</a>    |    <a href="find.html" style="text-decoration:none;">PWÃ£±â</a></font></pre></td>
+				</tr>
+			</table>
+		</td>
+		<td border=0 height=850 width=850 rowspan=3>
+		<table border=0 height=300 width=850 >	
+			
+		
+		<font size=6 face="1ÈÆ¼Ø»çÅÁ R" ><font color=#F78181>best</font> °Ô½Ã±Û
+		
+		
+		
+		
+		<tr align=center>
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">¼øÀ§</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R">Á¦¸ñ</td>
+		<td colspan=3 rowspan=5><body onload="rotate()"><img src="ji8.jpg" id="slide" width=325 height=300></td>
+		</tr>
+		
+		
+		
+		<tr align=center >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">1</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="ay2.html" class="no-uline">ÀÌ½Ã±¹¿¡ ÀÏº»¿©Çà..? <font color=red>(5)</td>
+		
+		</tr >
+
+		
+		
+		<tr align=center >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">2</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="na.html" class="no-uline">ÄÚÅ¸Å°³ª¹ß·ç °¬´Ù¿ÔÁö·Õ~ <font color=red>(2)</td>
+		
+		</tr>
+		
+		
+		
+		<tr align=center  >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">3</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="he.html" class="no-uline">³ª ÀÚÀ¯¿©Çà Ã³À½ °¡ºÁ... <font color=red>(3)</td>
+	
+		</tr>
+		</table>
+		
+		
+		<font color=#FA5858>Ç×°ø±Ç</font>À» ¿¹¾àÇÏ°í ½Í´Ù¸é?</font>
+		<table width=850 border=0 >
+		<tr align=center  >
+		<td #819FF7><font size=4 face="1ÈÆ¼Ø»çÅÁ R">1</td>
+		<td width=550><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="http://kr.koreanair.com" class="no-uline">´ëÇÑÇ×°ø</td>
+		<td colspan=2><img src=koreanair.jpg height=50 width=100></td>
+		
+		<tr>
+		<td id=t1 colspan=5 class="line">
+		</td>
+		</tr>
+		
+		<tr align=center  >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">2</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="http://flyasiana.com" class="no-uline">AISANA AIRLINES</td>
+		<td colspan=2><img src=asiana.png height=50 width=100></td>
+		
+		<tr>
+		<td id=t1 colspan=5 class="line">
+		</td>
+		</tr>
+		
+		<tr align=center  >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">3</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="http://flyairseoul.com" class="no-uline">¿¡¾î¼­¿ï</td>
+		<td colspan=2><img src=airseoul.jpg height=50 width=100></td>
+
+		<tr>
+		<td id=t1 colspan=5 class="line">
+		</td>
+		</tr>
+		
+		<tr align=center  >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">4</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="http://www.air-incheon.com" class="no-uline">¿¡¾îÀÎÃµ</td>
+		<td colspan=2><img src=airincheon.jpg height=50 width=100></td>
+
+		<tr>
+		<td id=t1 colspan=5 class="line">
+		</td>
+		</tr>
+		
+		<tr align=center  >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">5</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="http://www.eastarjet.com" class="no-uline">ÀÌ½ºÅ¸Ç×°ø</td>
+		<td colspan=2><img src=eastar.jpg height=50 width=100></td>
+
+		<tr>
+		<td id=t1 colspan=5 class="line">
+		</td>
+		</tr>
+		
+		<tr align=center  >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">6</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="http://www.jejuair.net" class="no-uline">Á¦ÁÖÇ×°ø</td>
+		<td colspan=2><img src=jejuair.jpg height=50 width=100></td>
+		
+		<tr>
+		<td id=t1 colspan=5 class="line">
+		</td>
+		</tr>
+		
+		<tr align=center  >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">7</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="http://www.jinair.net" class="no-uline">Áø¿¡¾î</td>
+		<td colspan=2><img src=jinair.jpg height=50 width=100></td>
+		
+		<tr>
+		<td id=t1 colspan=5 class="line">
+		</td>
+		</tr>
+		
+		<tr align=center  >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">8</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="http://www.twayair.com" class="no-uline">Æ¼¿þÀÌ</td>
+		<td colspan=2><img src=twayair.jpg height=50 width=100></td>
+		
+		<tr>
+		<td id=t1 colspan=5 class="line">
+		</td>
+		</tr>
+		
+		<tr align=center  >
+		<td width=75 ><font size=4 face="1ÈÆ¼Ø»çÅÁ R">9</td>
+		<td width=450><font size=4 face="1ÈÆ¼Ø»çÅÁ R"><a href="http://www.airbusan.com" class="no-uline">¿¡¾îºÎ»ê</td>
+		<td colspan=2><img src=airbusan.png height=50 width=100>
+		</td>
+		</tr>
+		
+		<tr>
+		<td id=t1 colspan=5 class="line">
+		</td>
+		</tr>
+		
+		</table>
+		
+		</tr>
+		
+		</td>
+		
+		
+<tr>	
+		<td><a href="write.html"><img onmouseover="this.src='ad2.jpg'" onmouseout="this.src='ad1.jpg'" src="ad1.jpg" width=300 valign=top border=0></a></td>
+	</tr>
+	
+	</body>
+
+     <td>
+     <table align=left >
+     <form action="javascript:alert('success!');">
+     <div font face="1ÈÆ¼Ø»çÅÁ R">
+     <input id=i2 type="text"  placeholder="°Ë»ö¾î ÀÔ·Â">
+     <button id=b2><font face="1ÈÆ¼Ø»çÅÁ R">°Ë»ö</button>
+     </div>
+     </form>                                        
+     </table>
+	 </td>
+	 	
+	
+	<tr height=130>
+		<td colspan=2>
+			<table border=0 width=1200 height=130>
+				<tr height=45>
+					<td colspan=2><font size=5 face="1ÈÆ¼Ø»çÅÁ R">¹®ÀÇ»çÇ×</font></td>
+					<td rowspan=3><a href="site.html"><img src=travel.jpg width=400 height=130 align=right border=0></a></td>
+				</tr>
+				<tr>
+					<td width=100><font size=3 color=#5D5D5D face="1ÈÆ¼Ø»çÅÁ R">CALL</font></td>
+					<td><font size=3 color=#BDBDBD face="1ÈÆ¼Ø»çÅÁ R">010.7370.6808</font></td>
+				</tr>
+				<tr valign=top height=50>
+					<td width=100><font size=3 color=#5D5D5D face="1ÈÆ¼Ø»çÅÁ R">E-MAIL</font></td>
+					<td><font size=3 color=#BDBDBD face="1ÈÆ¼Ø»çÅÁ R">jsp129@naver.com</font></td>
+				</tr>
+			</table>
+</table>
+</body>
+</html>
